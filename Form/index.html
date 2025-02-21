@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Bio-data Form</h2>
+        <form id="biodataForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <input type="date" name="dob" required>
+                <select name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="text" name="maritalStatus" placeholder="Marital Status" required>
+                <input type="text" name="nationality" placeholder="Nationality" required>
+                <input type="tel" name="contact" placeholder="Contact Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="address" placeholder="Address" required></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Educational Background</legend>
+                <input type="text" name="qualification" placeholder="Highest Qualification" required>
+                <input type="text" name="institution" placeholder="Institution Name" required>
+                <input type="number" name="year" placeholder="Year of Passing" required>
+                <input type="text" name="cgpa" placeholder="CGPA/Percentage" required>
+            </fieldset>
+
+            <fieldset>
+                
+                <label>Profile Picture (optional):</label>
+                <input type="file" name="profilePicture" accept="image/*">
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
